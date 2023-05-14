@@ -2,7 +2,7 @@
 <%@ page import="hello.servlet.domain.member.Member" %>
 <%@ page import="hello.servlet.domain.member.MemberRepository" %>
 <%
-  //request, response 사용 가능
+  //request, response 사용 가능 - jsp도 결국 서블릿으로 자동변환 돼서 사용되기 때문에, Service 로직이 실행된다고 생각.
   MemberRepository memberRepository = MemberRepository.getInstance();
 
   System.out.println("MemberSaveServlet.service");
